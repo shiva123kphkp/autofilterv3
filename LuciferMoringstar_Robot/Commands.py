@@ -45,14 +45,18 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**⭕️ നിങ്ങൾ ചോദിച്ച സിനിമ കിട്ടണമെങ്കിൽ ആദ്യം ഗ്രൂപ്പിൽ ജോയിൻ ചെയുക ⭕️
+
+                    💘  𝙹𝙾𝙸𝙽  :  @mallumoviesp  💘
+
+                    ⭕️ എന്നിട്ട് 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 എന്ന ഭാഗം CLICK ചെയുക സിനിമ ലഭിക്കും ⭕️**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("💘 𝗝𝗢𝗜𝗡 𝗙𝗢𝗥 𝗙𝗜𝗟𝗠 💘", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🍿 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🍿", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
