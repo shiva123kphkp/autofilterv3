@@ -45,7 +45,7 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**⭕DO YOU WANT THE FILM..YOU JOIN THE GROUP AND CLICK TO DOWNLOAD⭕**",
+                    text="**⭕ നിങ്ങൾ ചോദിച്ച സിനിമ വേണം എന്നുണ്ടെങ്കിൽ ആദ്യം JOIN GROUP അടിച്ചു ജോയിൻ ചെയ്യുക എന്നിട്ട് DOWNLOAD എന്ന ഭാഗം CLICK ചെയ്യുക സിനിമ ലഭിക്കും ⭕️**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
