@@ -108,20 +108,22 @@ async def start(bot, message):
                 ]
             )
         )
-    else:
-        await message.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
-                ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
-                ]]
-            )
-        )
+    else: await message.reply_photo(
+              photo="https://telegra.ph/file/2fee0e835eb8a392f1589.jpg",
+              caption=START_MSG,
+              reply_markup=InlineKeyboardMarkup(
+                  [ 
+                      [ 
+                          InlineKeyboardButton("🤴 𝗢𝗡𝗪𝗘𝗥 🤴", url="https://t.me/OGGY123kph"),
+                          InlineKeyboardButton("💘 𝗕𝗢𝗧 𝗚𝗥𝗢𝗨𝗣 💘", url="https://t.me/mallumoviesp")
+                      ], 
+                      [ 
+                          InlineKeyboardButton("😒 Help", callback_data="help"),
+                          InlineKeyboardButton("Search Here 🎯", switch_inline_query_current_chat='')
+                        ] 
+                      ] 
+                  ) 
+              ) 
         StopPropagation
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
