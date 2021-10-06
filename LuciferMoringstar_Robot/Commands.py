@@ -122,9 +122,9 @@ async def start(bot, message):
                           InlineKeyboardButton("Search Here 🎯", switch_inline_query_current_chat='')
                         ] 
                       ] 
-                  ) 
-              ) 
-        StopPropagation
+                   ) 
+                ) 
+          StopPropagation
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
