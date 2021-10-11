@@ -109,7 +109,7 @@ async def start(bot, message):
             )
         )
     else:
-        await cmd.reply_photo(photo=START_IMG, caption=START_MSG.format(cmd.from_user.mention),
+        await message.reply_photo(photo=START_IMG, caption=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("💘 𝗚𝗥𝗢𝗨𝗣 💘", url="https://t.me/moviehubgroupp")
