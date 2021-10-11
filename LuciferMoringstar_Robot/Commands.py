@@ -3,7 +3,7 @@ import logging
 from pyrogram import Client, filters
 from pyrogram import StopPropagation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Config import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, TUTORIAL, BROADCAST_CHANNEL, DB_URL, SESSION, ADMIN_ID    
+from Config import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, TUTORIAL, BROADCAST_CHANNEL, DB_URL, SESSION, ADMIN_ID, START_MSG 
 from LuciferMoringstar_Robot.Utils import Media, get_file_details 
 from LuciferMoringstar_Robot.Broadcast import broadcast
 from LuciferMoringstar_Robot import ABOUT
@@ -109,16 +109,13 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await cmd.reply_photo(photo=START_IMG, caption=START_MSG.format(cmd.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
+                InlineKeyboardButton("💘 𝗚𝗥𝗢𝗨𝗣 💘", url="https://t.me/moviehubgroupp")
                 ],[
-                InlineKeyboardButton("😓 Help 😓", callback_data="help"),
-                InlineKeyboardButton("🎀 About 🎀", callback_data="about")
+                InlineKeyboardButton("🤴 𝗕𝗢𝗧 𝗢𝗡𝗪𝗘𝗥 🤴", url="https://t.me/OGGY123kph"),
+                InlineKeyboardButton("🕊️ 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🕊️", url="https://t.me/mallumovies30")
                 ]]
             )
         )
