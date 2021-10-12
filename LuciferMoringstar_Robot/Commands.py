@@ -16,6 +16,20 @@ LOG_CHANNEL = BROADCAST_CHANNEL
 
 db = Database(DB_URL, SESSION)
 
+PHOTO = [
+    "https://telegra.ph/file/908bfeec3460e4e4d0918.jpg",
+    "https://telegra.ph/file/146158fd0240c11536309.jpg",
+    "https://telegra.ph/file/d17d76da525d6f6645f82.jpg",
+    "https://telegra.ph/file/546a36f7d56c8986b7a62.jpg",
+    "https://telegra.ph/file/3c09f0877e1610b8e4892.jpg",
+    "https://telegra.ph/file/86673741471c724ebdcc4.jpg",
+    "https://telegra.ph/file/a8c6493364ce02a53bce6.jpg",
+    "https://telegra.ph/file/08a4dd4fa81c030fc04eb.jpg",
+    "https://telegra.ph/file/fae458e5a4c8e0298ebaf.jpg",
+    "https://telegra.ph/file/8369e484d70996824b3d2.jpg",
+    "https://telegra.ph/file/f590eacfb9337d7d22727.jpg",    
+]
+
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
     chat_id = message.from_user.id
@@ -109,7 +123,10 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_photo(photo=START_IMG, caption=START_MSG.format(message.from_user.mention),
+        await bbot.send_photo(
+            chat_id=update.chat.id,
+            photo=f"{random.choice(PHOTO)}",
+            caption=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("💘 𝗚𝗥𝗢𝗨𝗣 💘", url="https://t.me/moviehubgroupp")
