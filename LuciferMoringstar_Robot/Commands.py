@@ -85,7 +85,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 DEPLOY YOURS 🎖', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('⚡ 𝐆𝐑𝐎𝐔𝐏 ⚡', url="https://t.me/moviehubgroupp"),
+                        InlineKeyboardButton('❣️ 𝐒𝐇𝐀𝐑𝐄 ❣️', url="https://t.me/share/url?url=**🤩%20MOVIE%20HUB%20🤩%0A%0Aഏത്%20അർധരാത്രി%20ചോദിച്ചാലും%20പടം%20കിട്ടും,%20ലോകത്തിലെ%20ഒട്ടുമിക്ക%20ഭാഷകളിലുമുള്ള%20സിനിമകളുടെ%20കളക്ഷൻ..%20❤️%0A%0A👇%20GROUP%20LINK%20👇%0A%0A@moviehubgroupp%0A%0A@moviehubgroupp%0A%0A@moviehubgroupp**")
+                    ],[
+                        InlineKeyboardButton('🍿 sᴜʙᴛɪᴛɪʟᴇ 🍿', url="https://t.me/subtitle_dl_bot")
                     ]
                     ]
                 await bot.send_cached_media(
