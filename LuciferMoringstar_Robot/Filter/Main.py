@@ -135,14 +135,12 @@ async def group(client, message):
             photo="https://telegra.ph/file/2dc5717fde394dd9b8cdc.jpg",
             caption=f"""
 <b>🥺 Dear {message.from_user.mention}
-
-\n Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
+Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
 
 Please Go to Google and Confirm the Correct Spelling 🙏
 
 Click Here To 👉 <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
 
-✍Or Your Spelling Is Correct Report To Admins For Add Requested File in our database:-♠️ 𝑴ᴏᴠɪᴇ 𝑯ᴜʙ ❣️
 \n\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -380,4 +378,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ 🥲",show_alert=True)
