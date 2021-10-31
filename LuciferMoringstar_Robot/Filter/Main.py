@@ -144,7 +144,7 @@ Click Here To 👉 <a href="https://www.google.com/search?q={search}">🔍 SEARC
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🕵️‍♂️ GOOGLE 🕵️‍♂️", url="https://www.google.com/")
+                        InlineKeyboardButton("🕵️‍♂️ GOOGLE 🕵️‍♂️", url="https://google.com/search?q,="{search}")
                     ],
                     [       
                         InlineKeyboardButton("Did not understand🥲", url="https://t.me/joinchat/6WZ0z0AQ0E8yMDdl")
