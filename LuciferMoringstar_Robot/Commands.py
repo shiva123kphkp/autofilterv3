@@ -1,5 +1,6 @@
 import os
 import logging
+import random
 from pyrogram import Client, filters
 from pyrogram import StopPropagation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -13,7 +14,10 @@ from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
 LOG_CHANNEL = BROADCAST_CHANNEL
-
+PHOTO = [
+"https://telegra.ph/file/dee532d5191d2a4c4da19.jpg",
+"https://telegra.ph/file/af7579d49983046c54ebb.jpg"
+]
 db = Database(DB_URL, SESSION)
 
 
