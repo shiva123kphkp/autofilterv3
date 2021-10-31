@@ -331,8 +331,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [
-                    
-                        InlineKeyboardButton('🎬 GROUP ', url='https://t.me/moviehubgroupp')
+                    [
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ]
                     ]
                 
