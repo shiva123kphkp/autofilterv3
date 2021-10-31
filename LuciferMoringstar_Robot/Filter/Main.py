@@ -152,7 +152,7 @@ Click Here To 👉 <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
                     ]
                 ]
             )
-            parse_mode="html",
+            parse_mode="markdown",
             reply_to_message_id=message.message_id
         )
             return
