@@ -139,10 +139,10 @@ async def start(bot, message):
         await message.reply_photo(photo=random.choice(PHOTO), caption=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("💘 𝗚𝗥𝗢𝗨𝗣 💘", url="https://t.me/moviehubgroupp")
-                ],[
-                InlineKeyboardButton("🤴 𝗕𝗢𝗧 𝗢𝗡𝗪𝗘𝗥 🤴", url="https://t.me/OGGY123kph"),
                 InlineKeyboardButton("➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="http://t.me/Autofilter_v3sbot?startgroup=botstart")
+                ],[
+                InlineKeyboardButton("HELP ⚙️", callback_data="help"),
+                InlineKeyboardButton("ABOUT 😎", callback_data="about")
                 ]]
             )
         )
