@@ -298,10 +298,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('🔖 FILE CHANNEL', url='t.me/Mo_Tech_YT'),
-                InlineKeyboardButton('😌 Source Code', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
+                InlineKeyboardButton('🔖 FILE CHANNEL', url='t.me/moviehubfiles2'),
+                InlineKeyboardButton('😌 Source Code', url="https://t.me/joinchat/aYbIjDgZqY9lYjQ9")
                 ],[
-                InlineKeyboardButton('🎬 Group', url='https://t.me/moviehubgroupp')
+                InlineKeyboardButton('⚡️ Group ⚡️', url='https://t.me/moviehubgroupp')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
