@@ -139,12 +139,12 @@ Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
 
 Please Go to Google and Confirm the Correct Spelling 🙏
 
-Click Here To 👉 <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
+Click Here To 👉 <a href="https://www.google.com/search?q={search}">🔍 SEARCH IN GOOGLE</a>
 \n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🕵️‍♂️ GOOGLE 🕵️‍♂️", url="https://www.google.com/search?q={search}")
+                        InlineKeyboardButton("🕵️‍♂️ GOOGLE 🕵️‍♂️", url="https://www.google.com/")
                     ],
                     [       
                         InlineKeyboardButton("Did not understand🥲", url="https://t.me/joinchat/6WZ0z0AQ0E8yMDdl")
