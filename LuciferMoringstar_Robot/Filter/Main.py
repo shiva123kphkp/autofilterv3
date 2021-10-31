@@ -132,7 +132,7 @@ async def group(client, message):
         else:
             LuciferMoringstar=await client.send_photo(
             chat_id = message.chat.id,
-            photo="https://telegra.ph/file/2dc5717fde394dd9b8cdc.jpg",
+            photo="https://telegra.ph/file/89a124fd2462a867745e9.jpg",
             caption=f"""
 <b>🥺 Dear {message.from_user.mention}
 Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
@@ -140,8 +140,7 @@ Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
 Please Go to Google and Confirm the Correct Spelling 🙏
 
 Click Here To 👉 <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
-
-\n\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
+\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
