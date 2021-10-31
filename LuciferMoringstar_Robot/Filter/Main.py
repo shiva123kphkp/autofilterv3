@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**⊰᯽⊱┈《 {Search} 》┈⊰᯽⊱\n\n┏  🎬 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : {Search}\n┣  🤴 ᴀsᴋᴇᴅ ʙʏ : {mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝑹ᴀsʜᴍɪᴋᴀ 💘 \n┗ 🍁 ᴄʜᴀɴɴᴇʟ : 𝑴ᴏᴠɪᴇ ʜᴜʙ ᴄʜᴀɴɴᴇʟ 🎬\n\n© MOVIE HUB\n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲\n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**⊰᯽⊱┈《 {Search} 》┈⊰᯽⊱\n\n┏  🎬 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : {Search}\n┣  🤴 ᴀsᴋᴇᴅ ʙʏ : {mention}\n┣ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝑹ᴀsʜᴍɪᴋᴀ 💘 \n┗ 🍁 ᴄʜᴀɴɴᴇʟ : 𝑴ᴏᴠɪᴇ ʜᴜʙ ᴄʜᴀɴɴᴇʟ 🎬\n\n© MOVIE HUB\n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲\n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -134,10 +134,16 @@ async def group(client, message):
             chat_id = message.chat.id,
             photo="https://telegra.ph/file/2dc5717fde394dd9b8cdc.jpg",
             caption=f"""
-🥺 Dear {message.from_user.mention}
-Couldnt Find Anything 🤧 Plz go to the google search the movie og name and enter here...!🥲
-\n <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
-\n\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️""",
+<b>🥺 Dear {message.from_user.mention}
+
+\n Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
+
+Please Go to Google and Confirm the Correct Spelling 🙏
+
+Click Here To 👉 <a href=https://google.com>🔍 SEARCH IN GOOGLE</a>
+
+✍Or Your Spelling Is Correct Report To Admins For Add Requested File in our database:-♠️ 𝑴ᴏᴠɪᴇ 𝑯ᴜʙ ❣️
+\n\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
