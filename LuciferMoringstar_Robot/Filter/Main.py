@@ -138,7 +138,7 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
-        m = await message.reply_photo(
+      msg = await m.reply_photo(
             chat_id = message.chat.id,
             photo=random.choice(SHIVA),
             caption=f"""
@@ -158,7 +158,7 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
             )
         )
             time.sleep(10)
-            await m.delete()
+            await msg.delete()
             return
         if not btn:
             return
