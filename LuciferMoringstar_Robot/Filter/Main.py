@@ -140,7 +140,7 @@ async def group(client, message):
         else:
         m = await client.send_photo(
             chat_id = message.chat.id,
-            photo="https://telegra.ph/file/89a124fd2462a867745e9.jpg",
+            photo=random.choice(SHIVA),
             caption=f"""
 <b>🥺 Dear {message.from_user.mention}
 Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
