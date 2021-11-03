@@ -3,6 +3,7 @@ from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
+import time
 from pyrogram.errors import UserNotParticipant
 from LuciferMoringstar_Robot import get_filter_results, get_file_details, is_subscribed, get_poster
 from LuciferMoringstar_Robot import RATING, GENRES, HELP, ABOUT
@@ -149,8 +150,8 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
                 ]
             )
         )
-            await asyncio.sleep(5) 
-            await Send_message.delete()
+            time.sleep(10)
+            await m.delete()
             return
         if not btn:
             return
