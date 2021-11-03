@@ -138,7 +138,8 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
-            m = await message.reply(
+            m = await message.reply_photo(
+            photo=random.choice(SHIVA),
             text=f"""
 <b>🥺 Dear {message.from_user.mention}
 Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
