@@ -131,7 +131,7 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
-            LuciferMoringstar=await client.send_photo(
+        m = await client.send_photo(
             chat_id = message.chat.id,
             photo="https://telegra.ph/file/89a124fd2462a867745e9.jpg",
             caption=f"""
@@ -151,7 +151,7 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
             )
         )
             time.sleep(10)
-            await message.delete()
+            await m.delete()
             return
         if not btn:
             return
