@@ -151,7 +151,7 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
             )
         )
             time.sleep(10)
-            await m.delete()
+            await message.delete()
             return
         if not btn:
             return
