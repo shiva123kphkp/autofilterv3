@@ -135,12 +135,9 @@ async def group(client, message):
             photo="https://telegra.ph/file/89a124fd2462a867745e9.jpg",
             caption=f"""
 <b>🥺 Dear {message.from_user.mention}
-Sorry  bro , No Movie/Series Related to the Given Word Was Found 🥺
+Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
 
-Please Go to Google and Confirm the Correct Spelling 🙏
-
-Click Here To 👉 <a href="https://www.google.com/search?q={search}">🔍 SEARCH IN GOOGLE</a>
-\n©️ 𝑷ᴏᴡᴇʀᴇᴅ ʙʏ <a href=https://t.me/moviehubgroupp>𝑴ᴏᴠɪᴇ 𝑯ᴜʙ</a> 🕵️‍♂️</b>""",
+<i>Please Go to Google and Confirm the Correct Spelling 🥺🙏</i></b>""",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -152,6 +149,8 @@ Click Here To 👉 <a href="https://www.google.com/search?q={search}">🔍 SEARC
                 ]
             )
         )
+            time.sleep(10)
+            await m.delete()
             return
         if not btn:
             return
